@@ -6,7 +6,7 @@ import { PhonebookModule } from './phonebook/phonebook.module';
 	imports: [
 		// MongooseModule.forRoot("mongodb+srv://nolan__kgotso:Nolan123@phonebook.gu113.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { autoCreate: true, }),
 		//mongodb+srv://admin:1234@cluster0.ilbdz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-		MongooseModule.forRoot("mongodb+srv://admin:1234@cluster0.ilbdz.mongodb.net/phobookDB?retryWrites=true&w=majority", { autoCreate: true }),
+		MongooseModule.forRoot("mongodb+srv://admin:1234@cluster0.ilbdz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { autoCreate: true }),
 		PhonebookModule,
 	],
 	controllers: [],
