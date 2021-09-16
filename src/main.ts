@@ -9,7 +9,6 @@ async function bootstrap() {
 
 	app.enableCors({
 		origin: ['http://localhost:4200', 'https://thulani-tools-phonebook.netlify.app/'],
-		methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
 		credentials: true
 	});
 	app.setGlobalPrefix('api');
@@ -22,4 +21,8 @@ async function bootstrap() {
 }
 bootstrap();
 
-
+// app.enableCors({
+// 	origin: true,
+// 	methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+// 	credentials: true,
+// });
