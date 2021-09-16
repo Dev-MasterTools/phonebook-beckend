@@ -8,8 +8,9 @@ async function bootstrap() {
 	let logger = new Logger();
 
 	app.enableCors({
-		origin: ['http://localhost:4200', 'https://thulani-tools-phonebook.netlify.app/'],
-		credentials: true
+		origin: true,
+		methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+		credentials: true,
 	});
 	app.setGlobalPrefix('api');
 
