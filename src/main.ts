@@ -8,10 +8,10 @@ async function bootstrap() {
 	let logger = new Logger();
 
 	app.enableCors({
-		origin: true,
-		methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
-	    credentials: true
-	});
+	origin: true,
+	methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+	credentials: true,
+});
 	app.setGlobalPrefix('api');
 
 	const port = process.env.PORT || 3000;
